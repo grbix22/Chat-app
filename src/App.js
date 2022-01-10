@@ -15,7 +15,11 @@ function App() {
       <header className="App-header">
         <h1>My chat app</h1>
         {messageObjects.map((messageObject, index) => (
-          <Message message={messageObject.message} key={index} />
+          <Message
+            message={messageObject.message}
+            member={messageObject.member}
+            key={index}
+          />
         ))}
         <MessageForm onSendMessage={handleSendMessage} />
       </header>

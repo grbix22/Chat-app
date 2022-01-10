@@ -1,0 +1,8 @@
+.FormButton {
+  height: 40px;
+  border-radius: 8px;
+  background-color: wheat;
+  border: 2px solid black;
+  display: block;
+  width: 100%;
+}
