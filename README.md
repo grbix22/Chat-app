@@ -7,7 +7,7 @@ Navedena chat aplikacija bi trebala:
 - moći kreirati nove tekstualne poruke
 - na enter ili klik na button “poslati” poruku (prikazati je na ekranu uz ime autora)
 - za svakog sudionika u chatu selektirati neku slučajnu boju i/ili ime kojih ih identificiraju
-- povezati se sa Scaledrone servisom (dodatne upute o servisu u privitku) te uspješno simulirati razgovor svih aktivnih korisnika
+- povezati se sa Scaledrone servisom te uspješno simulirati razgovor svih aktivnih korisnika
 - biti dostupna preko javnog GitHub računa
 
 
