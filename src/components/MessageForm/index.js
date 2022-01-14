@@ -1,38 +1,42 @@
-import { useState } from "react";
+import React from "react";
 import FormButton from "../FormButton";
 import TextInput from "../TextInput";
-import randomName from "../random/getRandomName";
-import randomColor from "../random/getRandomColor";
+import "./MessageForm.css";
 
-export default function MessageForm({ onSendMessage }) {
-  const [state, setState] = useState({
-    message: [],
-    member: { username: randomName(), color: randomColor() },
-  });
+class MessageForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: "",
+    };
+  }
 
-  const setMessage = (event) => {
-    setState((currentState) => {
-      return { ...currentState, message: event.target.value };
-    });
+  setText = (event) => {
+    this.setState({ text: event.target.value });
   };
 
-  const sendMessage = (event) => {
+  sendMessage = (event) => {
     event.preventDefault();
-    onSendMessage(state);
+    this.setState({ text: "" });
+    this.props.handleSendMessage(this.state.text);
   };
 
-  return (
-    <form onSubmit={sendMessage}>
-      <TextInput
-        inputProps={{
-          name: "message",
-          id: "message",
-          placeholder: "Type message here",
-        }}
-        onChange={setMessage}
-        value={state.message}
-      />
-      <FormButton type="submit">Send</FormButton>
-    </form>
-  );
+  render() {
+    return (
+      <form className="inputForm" onSubmit={this.sendMessage}>
+        <TextInput
+          inputProps={{
+            name: "text",
+            id: "text",
+            placeholder: "Type message here",
+          }}
+          onChange={this.setText}
+          value={this.state.text}
+        />
+        <FormButton type="submit"></FormButton>
+      </form>
+    );
+  }
 }
+
+export default MessageForm;

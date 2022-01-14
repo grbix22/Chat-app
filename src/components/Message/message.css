@@ -1,7 +1,85 @@
-.avatar {
+.Message-content > .username {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.currentMember > .Message-content > .message {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: cornflowerblue;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.Messages-list {
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.currentMember {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.guest {
+  display: flex;
+}
+
+.Message-content {
+  display: inline-block;
+}
+
+.currentMember > .Message-content {
+  align-items: flex-end;
+}
+
+.guest > .avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
   display: inline-block;
   margin: 0 10px -10px;
+}
+
+.guest > .Message-content > .message {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: lightgray;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #199ba759;
 }

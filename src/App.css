@@ -1,14 +1,50 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+  justify-content: space-between;
 }
 
 .App-header {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("./backgroundimage.jpg");
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border: 2px solid gray;
+  border-radius: 15px;
+  margin: 10px 20px auto 20px;
   color: black;
+  text-align: center;
+}
+
+.App-body {
+  height: 100vh;
+  border: 2px solid gray;
+  background-image: url("./backgroundimage.jpg");
+  border-radius: 15px;
+  margin: 10px 20px 10px 20px;
+  overflow-y: auto;
+}
+
+.App-footer {
+  background-image: url("./backgroundimage.jpg");
+  margin: auto 20px 10px 20px;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.activeUser {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
