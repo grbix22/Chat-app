@@ -1,5 +1,7 @@
 Seminarski rad u sklopu programa za Frontend developera u Algebri.
 
+Upute za korištenje završnog rada: otvoriti aplikaciju u dva odvojena taba unutar web preglednika. Tako možete simulirati komunikaciju između dva korisnika unutar chat rooma.
+
 Deploy na Netlify: https://grbix22-agebra-chat-app.netlify.app/
 
 Zadatak je napisati web chat aplikaciju. Tehnologije za izradu aplikacije su proizvoljne, važno je samo da je s izabranim tehnologijama moguće ostvariti sve uvjete funkcionalne specifikacije.
