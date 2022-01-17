@@ -1,5 +1,7 @@
 Seminarski rad u sklopu programa za Frontend developera u Algebri.
 
+Deploy na Netlify: https://grbix22-agebra-chat-app.netlify.app/
+
 Zadatak je napisati web chat aplikaciju. Tehnologije za izradu aplikacije su proizvoljne, važno je samo da je s izabranim tehnologijama moguće ostvariti sve uvjete funkcionalne specifikacije.
 
 Potrebno je kreirati funkcionalno korisničko sučelje za sudionike u chatu i kreirani kod postaviti na GitHub.
